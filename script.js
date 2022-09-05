@@ -57,3 +57,12 @@ $(window).scroll(function(event) {
   });
   
 });
+
+function hideMenu(){
+   let menuOpen = document.querySelector('.toggler').checked;
+ 
+   if(menuOpen = true){
+     document.querySelector('.toggler').checked = false;
+   }
+   }
+   window.addEventListener("scroll", hideMenu);
