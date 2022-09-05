@@ -184,8 +184,8 @@ label a {
 .menuLink:hover:after{
   width: 100%;
 }
-/*--------- Container -------*/
 
+/*--------- Container -------*/
 .container {
   padding: 5%;
 }
@@ -194,6 +194,8 @@ label a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------ Headline -----*/
@@ -243,6 +245,10 @@ label a {
   border-radius: .5rem 5rem;
   box-shadow: 10px 8px 0 6px var(--darkGreen);
   object-fit: cover;
+}
+
+.aboutImg {
+max-height: 550px;
 }
 
 .button {
@@ -358,7 +364,7 @@ label a {
   height: 100%;
   background-image: linear-gradient(147deg, var(--lightGreen) 0%, var(--darkGreen) 74%);
   border-radius: 20px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .cardImgLeft img,
@@ -367,9 +373,11 @@ label a {
   height: 100%;
   object-fit: cover;
   display: block;
-  opacity: 0;
+  opacity: 1;
   border-radius: .5rem 5rem;
   transition: all 0.3s;
+  z-index: 2;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
