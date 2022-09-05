@@ -14,15 +14,50 @@
 
 <body>
     <nav class="nav">
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul class="menuList">
-                <li class="menuItem"> <a class="menuLink" href="./index.html">Home</a> </li>
-                <li class="menuItem"> <a class="menuLink" href="./about.html">About</a> </li>
-                <li class="menuItem"> <a class="menuLink" href="/contact">Contact</a> </li>
+        <div class="menu">
+            <input id="menu--toggle"
+                   type="checkbox" />
+            <!-- /#menu--toggle -->
+            <label class="menu--toggle__trigger"
+                   for="menu--toggle"></label>
+            <!-- /.menu--toggle__trigger -->
+            <label class="menu--toggle__burger"
+                   for="menu--toggle"></label>
+            <!-- /.menu--toggle__burger -->
+            <ul class="menu__body">
+              <li class="menu__body-element">
+                <a class="menu__body-link"
+                   href="/index.html"
+                   target="_blank">
+                  Home
+                </a>
+                <!-- /.menu__body-link -->
+              </li>
+              <!-- /.menu__body-element -->
+      
+              <li class="menu__body-element">
+                <a class="menu__body-link"
+                   href="./about.html"
+                   target="_blank">
+                  About
+                </a>
+                <!-- /.menu__body-link -->
+              </li>
+              <!-- /.menu__body-element -->
+      
+              <li class="menu__body-element">
+                <a class="menu__body-link"
+                   href="#portfolio">
+                  Portfolio
+                </a>
+                <!-- /.menu__body-link -->
+              </li>
+              <!-- /.menu__body-element -->
             </ul>
-        </label>
+            <!-- /.menu__body -->
+          </div>
+          <!-- /.menu -->
+      
     </nav>
     <main>
         <div class="container flexRow">
