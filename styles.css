@@ -50,8 +50,8 @@ h6 {
 .menu--toggle__burger,
  .menu--toggle__burger:before,
   .menu--toggle__burger:after {
-  position: absolute;
-  top: 1.6em;
+  position: fixed;
+  top: 2.6em;
   right: 1.6em;
   width: 2em;
   height: 3px;
@@ -69,18 +69,18 @@ h6 {
 
 .menu--toggle__burger:before {
   content: "";
-  top: 10px;
-  right: 0;
+  top: 30px;
+
 }
 
 .menu--toggle__burger:after {
   content: "";
-  top: 20px;
-  right: 0;
+  top: 40px;
+
 }
 
 .menu__body {
-  position: absolute;
+  position: fixed;
   width: 7em;
   height: 7em;
   top: 0;
@@ -154,12 +154,14 @@ h6 {
   top: 0;
   transform: rotate(-90deg);
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  right: 0;
 }
 
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
   top: 0;
   transform: rotate(90deg);
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  right: 0;
 }
 
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
