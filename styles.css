@@ -27,7 +27,9 @@ body {
   font-family: 'Work Sans', sans-serif;
   width: 100%;
 }
-
+main {
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -298,6 +300,16 @@ max-height: 550px;
 .rightImg {
   display: none;
 }
+}
+@media(max-width:700px){
+  .headline {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .smallHd{
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
 }
 /*----- Card -----*/
 .card {
