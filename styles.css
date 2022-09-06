@@ -92,6 +92,7 @@ h6 {
   border: 1px solid var(--darkGreen);
   z-index: 10;
   animation: checkboxUncheckedAnimation 0.35s both;
+  overflow: hidden;
 }
 
 .menu__body-element,
@@ -196,6 +197,12 @@ h6 {
   }
 }
 
+@media screen and (max-width:450px){
+  .menu__body-link{
+    font-size: 6vh;
+  }
+
+}
 /*--------- Container -------*/
 .container {
   padding: 5%;
