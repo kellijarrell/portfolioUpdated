@@ -215,6 +215,13 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 /*------ Headline -----*/
 .leftText,
 .rightImg {
@@ -504,6 +511,11 @@ max-height: 550px;
   }
 }
 
+/*------ Form ------*/
+
+.hs-input:not([type=file]){
+  background-color: transparent !important;
+}
 
 /*----- Footer -----*/
 
@@ -513,6 +525,7 @@ footer {
   position: relative;
   bottom: -10px;
   xleft: -8.2px;
+  z-index: -1;
 }
 
 footer .footer__inner {
