@@ -41,8 +41,8 @@ h6 {
 }
 
 /*------ Navigation ------*/
-#menu--toggle[type="checkbox"]:not(:checked),
- #menu--toggle[type="checkbox"]:checked {
+/*#menu--toggle[type="checkbox"]:not(:checked),
+#menu--toggle[type="checkbox"]:checked {
   display: none;
 }
 
@@ -202,7 +202,7 @@ h6 {
     font-size: 6vh;
   }
 
-}
+}*/
 /*--------- Container -------*/
 .container {
   padding: 5%;
@@ -318,7 +318,7 @@ max-height: 550px;
   margin: 0 auto;
   margin-top: 4rem;
 }
-.rightImg {
+x.rightImg {
   display: none;
 }
 }
@@ -512,12 +512,28 @@ max-height: 550px;
   }
 }
 
-/*------ Form ------*/
+/*------ Contact ------*/
 
-.hs-input:not([type=file]){
-  background-color: transparent !important;
+#contact{
+  padding-bottom: 3rem;
 }
 
+.contactIcons{
+  display: flex;
+gap: 3rem;
+text-align: center;
+}
+
+.contactIcons .icons{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media(max-width:850px){
+  .contactIcons{
+    flex-direction: column;
+  }
+}
 /*----- Footer -----*/
 .logoimg {
  max-width: 4rem;
