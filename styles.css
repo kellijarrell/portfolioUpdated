@@ -314,12 +314,12 @@ max-height: 550px;
 
 @media screen and (max-width:920px) {
   .leftText {
-  max-width: 100%;
   margin: 0 auto;
   margin-top: 4rem;
 }
-x.rightImg {
-  display: none;
+.leftText,
+.rightImg {
+  max-width: 100%;
 }
 }
 @media screen and (max-width:700px){
