@@ -2,7 +2,7 @@
 
 /*----- Root Colors -----*/
 :root {
-  --darkGreen: #617868;
+  --darkGreen: #4f6355;
   --lightGreen: #cee5d0;
   --black: #242424;
   --lightestColor: #FCF8E8;
@@ -343,7 +343,7 @@ max-height: 550px;
   border: 1px solid var(--darkGreen);
   padding: 25px;
   border-radius: 25px;
-  height: 400px;
+  height: auto;
   transition: all 0.3s;
   margin-bottom: 3rem;
 
