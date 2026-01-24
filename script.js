@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 var logoElement = $('footer .hide');
 
@@ -57,3 +58,25 @@ $(window).scroll(function(event) {
   });
   
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu--toggle');
+  const menuLinks = document.querySelectorAll('.menu__body-link');
+  const menuBody = document.querySelector('.menu__body');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Uncheck the menu toggle
+      menuToggle.checked = false;
+
+      // Reset animation by forcing reflow
+      menuBody.style.animation = 'none';
+      menuBody.offsetHeight; // Trigger reflow
+      menuBody.style.animation = ''; // Remove inline animation so CSS takes over
+    });
+  });
+});
+
+
