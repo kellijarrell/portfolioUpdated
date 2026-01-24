@@ -41,7 +41,13 @@ h6 {
 }
 
 /*------ Navigation ------*/
-/*#menu--toggle[type="checkbox"]:not(:checked),
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+#menu--toggle[type="checkbox"]:not(:checked),
 #menu--toggle[type="checkbox"]:checked {
   display: none;
 }
@@ -202,7 +208,7 @@ h6 {
     font-size: 6vh;
   }
 
-}*/
+}
 /*--------- Container -------*/
 .container {
   padding: 5%;
